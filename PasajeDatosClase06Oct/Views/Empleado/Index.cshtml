@@ -1,0 +1,27 @@
+﻿@using PasajeDatosClase06Oct.Models
+
+@model EmpleadoClienteVM 
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div>
+    <h4>Empleado</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ApynEmpleado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RazonSocialCliente)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>
